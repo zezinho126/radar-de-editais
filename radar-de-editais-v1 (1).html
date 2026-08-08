@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<title>Radar de Editais — V1</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#667085;--line:#e4e7ec;--primary:#111827;--green:#067647;--greenbg:#ecfdf3;--yellow:#a15c00;--yellowbg:#fffaeb;--red:#b42318;--redbg:#fef3f2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.5}
+.container{max-width:980px;margin:auto;padding:20px}.hero{background:var(--primary);color:#fff;padding:38px 24px;border-radius:0 0 24px 24px}.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:0;color:#d0d5dd}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 4px 16px rgba(16,24,40,.04)}
+h2{margin-top:0;font-size:22px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(max-width:680px){.grid{grid-template-columns:1fr}.hero h1{font-size:27px}}
+label{display:block;font-weight:700;margin-bottom:7px}select,input{width:100%;padding:13px;border:1px solid #d0d5dd;border-radius:10px;background:#fff;font-size:15px}
+button{border:0;border-radius:10px;padding:13px 18px;font-weight:700;font-size:15px;cursor:pointer}.primary{background:#111827;color:#fff}.secondary{background:#eef2f6;color:#111827}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.hidden{display:none}.intro{font-size:17px}.badge{display:inline-block;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:800}.high{background:var(--greenbg);color:var(--green)}.medium{background:var(--yellowbg);color:var(--yellow)}.low{background:var(--redbg);color:var(--red)}
+.result{border:1px solid var(--line);border-radius:15px;padding:18px;margin:14px 0}.result h3{margin:7px 0}.meta{color:var(--muted);font-size:14px}.reason{background:#f8fafc;border-radius:10px;padding:12px;margin:12px 0}.checklist{margin:10px 0 0;padding-left:22px}.notice{background:#fff7ed;border:1px solid #fed7aa;padding:14px;border-radius:12px;font-size:14px;color:#7c2d12}.small{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="container">
+    <h1>🎯 Radar de Editais</h1>
+    <p>Encontre oportunidades de captação mais compatíveis com o seu projeto.</p>
+  </div>
+</header>
+
+<main class="container">
+<section id="home" class="card">
+  <h2>Comece seu diagnóstico</h2>
+  <p class="intro">Responda algumas perguntas. O Radar compara seu perfil com a base de oportunidades cadastradas e mostra as mais compatíveis.</p>
+  <div class="notice"><strong>V1 de teste:</strong> esta versão usa uma base demonstrativa de editais. Sempre confira o edital na fonte oficial antes de tomar qualquer decisão.</div>
+  <div class="actions"><button class="primary" onclick="show('form')">Encontrar editais</button></div>
+</section>
+
+<section id="form" class="card hidden">
+  <h2>Perfil do projeto</h2>
+  <div class="grid">
+    <div><label for="org">Tipo de organização</label><select id="org"><option value="">Selecione</option><option>ONG / OSC</option><option>Instituição cultural</option><option>Instituição educacional</option><option>Negócio social</option><option>Órgão público</option><option>Outro</option></select></div>
+    <div><label for="state">Estado</label><select id="state"><option value="">Selecione</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MG</option><option>MS</option><option>MT</option><option>PA</option><option>PB</option><option>PE</option><option>PI</option><option>PR</option><option>RJ</option><option>RN</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SE</option><option>SP</option><option>TO</option></select></div>
+    <div><label for="area">Área do projeto</label><select id="area"><option value="">Selecione</option><option>Cultura</option><option>Educação</option><option>Esporte</option><option>Meio ambiente</option><option>Assistência social</option><option>Saúde</option><option>Empreendedorismo</option></select></div>
+    <div><label for="audience">Público beneficiado</label><select id="audience"><option value="">Selecione</option><option>Crianças e adolescentes</option><option>Jovens</option><option>Mulheres</option><option>Idosos</option><option>Pessoas com deficiência</option><option>Comunidade em geral</option><option>Outro público</option></select></div>
+    <div><label for="amount">Valor pretendido</label><input id="amount" type="number" min="0" step="1000" placeholder="Ex.: 100000"></div>
+    <div><label for="resource">Tipo de recurso</label><select id="resource"><option value="">Selecione</option><option>Patrocínio</option><option>Fundo / financiamento</option><option>Prêmio / seleção</option><option>Emenda / recurso público</option><option>Doação</option></select></div>
+  </div>
+  <div class="actions"><button class="primary" onclick="findMatches()">Ver oportunidades</button><button class="secondary" onclick="show('home')">Voltar</button></div>
+</section>
+
+<section id="results" class="card hidden">
+  <h2>Oportunidades encontradas</h2>
+  <p id="summary"></p>
+  <div id="resultsList"></div>
+  <div class="actions"><button class="secondary" onclick="show('form')">Refazer busca</button></div>
+</section>
+</main>
+
+<script>
+const editais = [
+ {id:1,nome:"Programa Demonstrativo de Cultura",org:"Instituição demonstrativa",area:"Cultura",estados:["Todos"],audiencias:["Comunidade em geral","Jovens","Crianças e adolescentes"],max:200000,recursos:["Patrocínio","Prêmio / seleção"],prazo:"30/09/2026",status:"Exemplo",url:"https://www.gov.br/"},
+ {id:2,nome:"Fundo Demonstrativo de Educação",org:"Instituição demonstrativa",area:"Educação",estados:["Todos"],audiencias:["Crianças e adolescentes","Jovens"],max:150000,recursos:["Fundo / financiamento","Doação"],prazo:"15/10/2026",status:"Exemplo",url:"https://www.gov.br/"},
+ {id:3,nome:"Chamada Demonstrativa de Impacto Social",org:"Instituição demonstrativa",area:"Assistência social",estados:["Todos"],audiencias:["Mulheres","Idosos","Pessoas com deficiência","Comunidade em geral"],max:100000,recursos:["Doação","Prêmio / seleção"],prazo:"20/11/2026",status:"Exemplo",url:"https://www.gov.br/"},
+ {id:4,nome:"Programa Demonstrativo de Meio Ambiente",org:"Instituição demonstrativa",area:"Meio ambiente",estados:["Todos"],audiencias:["Comunidade em geral"],max:300000,recursos:["Patrocínio","Fundo / financiamento"],prazo:"10/12/2026",status:"Exemplo",url:"https://www.gov.br/"}
+];
+
+function show(id){
+  ["home","form","results"].forEach(x=>document.getElementById(x).classList.add("hidden"));
+  document.getElementById(id).classList.remove("hidden");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function value(id){return document.getElementById(id).value}
+function findMatches(){
+  const profile={org:value("org"),state:value("state"),area:value("area"),audience:value("audience"),amount:Number(value("amount")||0),resource:value("resource")};
+  if(!profile.area || !profile.amount){alert("Selecione a área e informe o valor pretendido para continuar.");return;}
+  const scored=editais.map(e=>{
+    let score=0, reasons=[];
+    if(e.area===profile.area){score+=40;reasons.push("área do projeto compatível");}
+    if(e.estados.includes("Todos")||e.estados.includes(profile.state)){score+=20;reasons.push("abrangência territorial compatível");}
+    if(e.audiencias.includes(profile.audience)){score+=15;reasons.push("público beneficiado compatível");}
+    if(e.recursos.includes(profile.resource)){score+=15;reasons.push("tipo de recurso compatível");}
+    if(profile.amount<=e.max){score+=10;reasons.push("valor pretendido dentro do limite demonstrativo");}
+    return {...e,score,reasons};
+  }).sort((a,b)=>b.score-a.score);
+  document.getElementById("summary").innerHTML=`Encontramos <strong>${scored.length}</strong> oportunidades na base demonstrativa. As melhores aparecem primeiro.`;
+  document.getElementById("resultsList").innerHTML=scored.map(e=>{
+    const level=e.score>=70?["Alta","high"]:e.score>=45?["Média","medium"]:["Baixa","low"];
+    return `<article class="result">
+      <span class="badge ${level[1]}">${level[0]} compatibilidade · ${e.score}%</span>
+      <h3>${e.nome}</h3>
+      <div class="meta">Área: ${e.area} · Limite demonstrativo: R$ ${e.max.toLocaleString("pt-BR")} · Prazo: ${e.prazo}</div>
+      <div class="reason"><strong>Por que apareceu:</strong> ${e.reasons.join(", ")}.</div>
+      <strong>Checklist inicial</strong>
+      <ul class="checklist"><li>Conferir elegibilidade</li><li>Conferir documentos exigidos</li><li>Confirmar prazo</li><li>Conferir regras e valor</li></ul>
+      <div class="actions"><a href="${e.url}" target="_blank" rel="noopener"><button class="primary">Ver fonte oficial</button></a></div>
+      <p class="small">Status desta V1: ${e.status}. Substitua esta oportunidade por dados reais antes de apresentar o produto ao público.</p>
+    </article>`;
+  }).join("");
+  show("results");
+}
+</script>
+</body>
+</html>
