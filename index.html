@@ -72,6 +72,9 @@ table{width:100%;border-collapse:collapse;margin-top:12px}th,td{padding:10px;bor
     <div class="infoBox">
       Perfil padrão: <strong>Universidade Federal de Lavras — UFLA</strong>. Quando um filtro ficar sem seleção, o sistema considera automaticamente <strong>todas as opções</strong>.
     </div>
+    <div id="editaisSourceStatus" class="status" style="margin-top:12px">
+      <span class="loader"></span>Carregando base de editais (data/editais.json)...
+    </div>
   </section>
 
   <section class="card">
@@ -132,8 +135,9 @@ table{width:100%;border-collapse:collapse;margin-top:12px}th,td{padding:10px;bor
       <div><label>Valor máximo — até</label><input id="maxValue" type="number" min="0" step="1000" placeholder="Sem máximo"></div>
     </div>
     <div class="actions">
-      <button class="primary" onclick="findMatches()">Ver oportunidades</button>
+      <button class="primary" id="btnFindMatches" onclick="findMatches()" disabled>Ver oportunidades</button>
       <button class="secondary" onclick="clearEditalFilters()">Limpar filtros</button>
+      <button class="secondary" onclick="loadEditais(true)">Recarregar base de editais</button>
     </div>
   </section>
 
@@ -216,16 +220,19 @@ table{width:100%;border-collapse:collapse;margin-top:12px}th,td{padding:10px;bor
 
 <script>
 const API_BASE="https://api.transferegov.gestao.gov.br/ted";
+const EDITAIS_JSON_URL="data/editais.json";
 const PAGE_SIZE=50;
 let tedOffset=0;
 let tedCache=[];
 let loading=false;
 
-const editais=[
- {nome:"Chamada CNPq/MCTI/FNDCT Nº 44/2024 - UNIVERSAL",orgao:"CNPq / MCTI / FNDCT",area:"Ciência, tecnologia e inovação",naturezas:["Pesquisa"],publicos:["Pesquisadores"],instituicoes:["UFLA","IFES","ICT","Universidade Pública"],abrangencia:"Nacional",estados:[],valorMin:0,valorMax:300000,tipoRecurso:"Auxílio à pesquisa",fonte:"Governo Federal",instrumento:"Termo de Outorga",prazo:"30/01/2025",taxaVedada:true,vedacao:"São vedadas despesas com pagamento de taxas de administração, de gerência, a qualquer título.",fonteVedacao:"Item 5.5(d)",url:""},
- {nome:"Programa Demonstrativo de Infraestrutura Universitária",orgao:"Instituição demonstrativa",area:"Infraestrutura",naturezas:["Infraestrutura","Equipamentos"],publicos:["Comunidade acadêmica"],instituicoes:["UFLA","IFES","Universidade Pública"],abrangencia:"Nacional",estados:[],valorMin:500000,valorMax:3000000,tipoRecurso:"Equipamentos / bens / infraestrutura",fonte:"Governo Federal",instrumento:"Convênio",prazo:"30/11/2026",taxaVedada:false,vedacao:"",fonteVedacao:"",url:""},
- {nome:"Programa Demonstrativo de Desenvolvimento Rural em MG",orgao:"Instituição demonstrativa",area:"Desenvolvimento rural",naturezas:["Extensão","Pesquisa"],publicos:["Produtores rurais"],instituicoes:["UFLA","ICT","Universidade Pública"],abrangencia:"Estadual",estados:["MG"],valorMin:100000,valorMax:800000,tipoRecurso:"Recurso não reembolsável / fomento",fonte:"Governo Estadual",instrumento:"Acordo de Cooperação",prazo:"15/12/2026",taxaVedada:false,vedacao:"",fonteVedacao:"",url:""}
+// Base local de fallback: usada só se data/editais.json ainda não existir
+// (por exemplo, antes da primeira execução do GitHub Action) ou falhar ao carregar.
+const FALLBACK_EDITAIS=[
+ {nome:"Chamada CNPq/MCTI/FNDCT Nº 44/2024 - UNIVERSAL",orgao:"CNPq / MCTI / FNDCT",area:"Ciência, tecnologia e inovação",naturezas:["Pesquisa"],publicos:["Pesquisadores"],instituicoes:["UFLA","IFES","ICT","Universidade Pública"],abrangencia:"Nacional",estados:[],valorMin:0,valorMax:300000,tipoRecurso:"Auxílio à pesquisa",fonte:"Governo Federal",instrumento:"Termo de Outorga",prazo:"30/01/2025",taxaVedada:true,vedacao:"São vedadas despesas com pagamento de taxas de administração, de gerência, a qualquer título.",fonteVedacao:"Item 5.5(d)",url:""}
 ];
+
+let editais=[];
 
 function openModule(m){
  document.getElementById("editaisModule").classList.toggle("hidden",m!=="editais");
@@ -241,6 +248,32 @@ function norm(s){return String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/
 function formatDate(s){if(!s)return "—";const d=new Date(s);return isNaN(d)?s:d.toLocaleDateString("pt-BR")}
 function pick(obj,keys,fallback="—"){for(const k of keys){if(obj&&obj[k]!==undefined&&obj[k]!==null&&obj[k]!=="")return obj[k]}return fallback}
 
+// ---------- Carregamento da base de editais (gerada pelo scraper) ----------
+async function loadEditais(manual){
+ const statusEl=document.getElementById("editaisSourceStatus");
+ const btn=document.getElementById("btnFindMatches");
+ btn.disabled=true;
+ statusEl.innerHTML='<span class="loader"></span>Carregando base de editais (data/editais.json)...';
+ try{
+  const res=await fetch(EDITAIS_JSON_URL,{cache:manual?"reload":"default"});
+  if(!res.ok)throw new Error(`HTTP ${res.status}`);
+  const data=await res.json();
+  editais=Array.isArray(data.editais)?data.editais:[];
+  const gerado=data.geradoEm?new Date(data.geradoEm).toLocaleString("pt-BR"):"data desconhecida";
+  const erros=Array.isArray(data.erros)&&data.erros.length?` · ⚠️ ${data.erros.length} erro(s) na última raspagem (ver console)`:"";
+  if(erros)console.warn("Erros na última raspagem:",data.erros);
+  statusEl.innerHTML=`✅ ${editais.length} edital(is) carregado(s) · atualizado em ${esc(gerado)}${erros}`;
+ }catch(e){
+  console.error("Falha ao carregar data/editais.json:",e);
+  editais=FALLBACK_EDITAIS;
+  statusEl.innerHTML=`⚠️ Não foi possível carregar data/editais.json (${esc(e.message)}). Usando base de exemplo local com ${editais.length} item(ns). Rode o scraper (scraper/run.py) ou aguarde o GitHub Action gerar o arquivo.`;
+ }finally{
+  btn.disabled=false;
+  if(!document.getElementById("resultsCard").classList.contains("hidden")){
+   findMatches();
+  }
+ }
+}
 
 function renderSourceButton(e){
  const url=(e.url||"").trim();
@@ -257,18 +290,18 @@ function clearEditalFilters(){
  ["state","area","nature","audience","resourceType","fundingSource","instrument","minValue","maxValue"].forEach(id=>document.getElementById(id).value="");
  document.getElementById("institution").value="UFLA";document.getElementById("resultsCard").classList.add("hidden")
 }
-function matchState(e,state){if(!state)return true;if(e.abrangencia==="Nacional")return true;return e.estados.includes(state)}
+function matchState(e,state){if(!state)return true;if(e.abrangencia==="Nacional")return true;return (e.estados||[]).includes(state)}
 function matchRange(e,minV,maxV){if(minV&&e.valorMax<minV)return false;if(maxV&&e.valorMin>maxV)return false;return true}
-function deadlineViable(prazo){const p=prazo.split("/");if(p.length!==3)return false;return new Date(+p[2],+p[1]-1,+p[0])>=new Date()}
+function deadlineViable(prazo){if(!prazo)return false;const p=prazo.split("/");if(p.length!==3)return false;return new Date(+p[2],+p[1]-1,+p[0])>=new Date()}
 function findMatches(){
  const f={institution:val("institution"),state:val("state"),area:val("area"),nature:val("nature"),audience:val("audience"),resourceType:val("resourceType"),fundingSource:val("fundingSource"),instrument:val("instrument"),minValue:num("minValue"),maxValue:num("maxValue")};
  const list=editais.filter(e=>{
-  if(f.institution&&!e.instituicoes.includes(f.institution))return false;if(f.state&&!matchState(e,f.state))return false;if(f.area&&e.area!==f.area)return false;if(f.nature&&!e.naturezas.includes(f.nature))return false;if(f.audience&&!e.publicos.includes(f.audience))return false;if(f.resourceType&&e.tipoRecurso!==f.resourceType)return false;if(f.fundingSource&&e.fonte!==f.fundingSource)return false;if(f.instrument&&e.instrumento!==f.instrument)return false;if(!matchRange(e,f.minValue,f.maxValue))return false;return true
+  if(f.institution&&!(e.instituicoes||[]).includes(f.institution))return false;if(f.state&&!matchState(e,f.state))return false;if(f.area&&e.area!==f.area)return false;if(f.nature&&!(e.naturezas||[]).includes(f.nature))return false;if(f.audience&&!(e.publicos||[]).includes(f.audience))return false;if(f.resourceType&&e.tipoRecurso!==f.resourceType)return false;if(f.fundingSource&&e.fonte!==f.fundingSource)return false;if(f.instrument&&e.instrumento!==f.instrument)return false;if(!matchRange(e,f.minValue,f.maxValue))return false;return true
  }).map(e=>{
-  let score=0;if(!f.institution||e.instituicoes.includes(f.institution))score+=20;if(!f.state||matchState(e,f.state))score+=10;if(!f.area||e.area===f.area)score+=20;if(!f.nature||e.naturezas.includes(f.nature))score+=10;if(!f.audience||e.publicos.includes(f.audience))score+=10;if(!f.resourceType||e.tipoRecurso===f.resourceType)score+=10;if(!f.fundingSource||e.fonte===f.fundingSource)score+=5;if(!f.instrument||e.instrumento===f.instrument)score+=5;if((!f.minValue&&!f.maxValue)||matchRange(e,f.minValue,f.maxValue))score+=5;if(deadlineViable(e.prazo))score+=5;return{...e,score,priority:e.taxaVedada?"Prioridade secundária":"Prioridade alta",priorityClass:e.taxaVedada?"medium":"high"}
+  let score=0;if(!f.institution||(e.instituicoes||[]).includes(f.institution))score+=20;if(!f.state||matchState(e,f.state))score+=10;if(!f.area||e.area===f.area)score+=20;if(!f.nature||(e.naturezas||[]).includes(f.nature))score+=10;if(!f.audience||(e.publicos||[]).includes(f.audience))score+=10;if(!f.resourceType||e.tipoRecurso===f.resourceType)score+=10;if(!f.fundingSource||e.fonte===f.fundingSource)score+=5;if(!f.instrument||e.instrumento===f.instrument)score+=5;if((!f.minValue&&!f.maxValue)||matchRange(e,f.minValue,f.maxValue))score+=5;if(deadlineViable(e.prazo))score+=5;return{...e,score,priority:e.taxaVedada?"Prioridade secundária":"Prioridade alta",priorityClass:e.taxaVedada?"medium":"high"}
  }).sort((a,b)=>b.score-a.score);
- document.getElementById("resultsSummary").textContent=`${list.length} oportunidade(s) encontrada(s). Campos sem seleção foram tratados como “todas as opções”.`;
- document.getElementById("resultsList").innerHTML=list.length?list.map(e=>`<article class="result"><span class="badge ${e.score>=80?'high':e.score>=60?'medium':'low'}">${e.score}% compatibilidade</span><span class="badge ${e.priorityClass}">${e.priority}</span><h3>${e.nome}</h3><div class="meta">${e.orgao} · ${e.area} · ${e.abrangencia} · ${money(e.valorMin)} a ${money(e.valorMax)} · Prazo ${e.prazo}</div><div style="margin-top:8px">${e.naturezas.map(x=>`<span class="pill">${x}</span>`).join("")}<span class="pill">${e.tipoRecurso}</span><span class="pill">${e.instrumento}</span></div><div class="box ${e.priorityClass}"><strong>${e.priority}</strong><br>${e.taxaVedada?`Há vedação institucional relevante relacionada a taxas administrativas/gerenciais.<br><br><strong>Vedação:</strong> ${e.vedacao}<br><strong>Fonte:</strong> ${e.fonteVedacao}`:`Sem vedação de taxa administrativa/gerencial cadastrada neste exemplo.`}</div><ul><li>Conferir elegibilidade específica da UFLA</li><li>Revisar itens financiáveis e vedações</li><li>Confirmar possibilidade/necessidade de fundação de apoio</li><li>Validar regras administrativas, financeiras e jurídicas</li></ul>${renderSourceButton(e)}</article>`).join(""):`<p>Nenhuma oportunidade da base atual corresponde aos filtros.</p>`;
+ document.getElementById("resultsSummary").textContent=`${list.length} oportunidade(s) encontrada(s) de ${editais.length} na base. Campos sem seleção foram tratados como "todas as opções".`;
+ document.getElementById("resultsList").innerHTML=list.length?list.map(e=>`<article class="result"><span class="badge ${e.score>=80?'high':e.score>=60?'medium':'low'}">${e.score}% compatibilidade</span><span class="badge ${e.priorityClass}">${e.priority}</span><h3>${esc(e.nome)}</h3><div class="meta">${esc(e.orgao)} · ${esc(e.area)} · ${esc(e.abrangencia)} · ${money(e.valorMin)} a ${money(e.valorMax)} · Prazo ${esc(e.prazo||"—")}</div><div style="margin-top:8px">${(e.naturezas||[]).map(x=>`<span class="pill">${esc(x)}</span>`).join("")}<span class="pill">${esc(e.tipoRecurso)}</span><span class="pill">${esc(e.instrumento)}</span></div><div class="box ${e.priorityClass}"><strong>${e.priority}</strong><br>${e.taxaVedada?`Há vedação institucional relevante relacionada a taxas administrativas/gerenciais.<br><br><strong>Vedação:</strong> ${esc(e.vedacao)}<br><strong>Fonte:</strong> ${esc(e.fonteVedacao)}`:`Sem vedação de taxa administrativa/gerencial cadastrada neste exemplo.`}</div><ul><li>Conferir elegibilidade específica da UFLA</li><li>Revisar itens financiáveis e vedações</li><li>Confirmar possibilidade/necessidade de fundação de apoio</li><li>Validar regras administrativas, financeiras e jurídicas</li></ul>${renderSourceButton(e)}</article>`).join(""):`<p>Nenhuma oportunidade da base atual corresponde aos filtros.</p>`;
  document.getElementById("resultsCard").classList.remove("hidden")
 }
 
@@ -396,6 +429,9 @@ async function searchTeds(reset=true){
   loading=false;btn.disabled=false
  }
 }
+
+// Carrega a base de editais assim que a página abre.
+loadEditais(false);
 </script>
 </body>
 </html>
