@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0f172a">
-<title>CaptaEditais — V4</title>
+<title>CaptaEditais — V5</title>
 <style>
 :root{
   --bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#667085;--line:#dfe3ea;--primary:#0f172a;
@@ -222,9 +222,9 @@ let tedCache=[];
 let loading=false;
 
 const editais=[
- {nome:"Chamada CNPq/MCTI/FNDCT Nº 44/2024 - UNIVERSAL",orgao:"CNPq / MCTI / FNDCT",area:"Ciência, tecnologia e inovação",naturezas:["Pesquisa"],publicos:["Pesquisadores"],instituicoes:["UFLA","IFES","ICT","Universidade Pública"],abrangencia:"Nacional",estados:[],valorMin:0,valorMax:300000,tipoRecurso:"Auxílio à pesquisa",fonte:"Governo Federal",instrumento:"Termo de Outorga",prazo:"30/01/2025",taxaVedada:true,vedacao:"São vedadas despesas com pagamento de taxas de administração, de gerência, a qualquer título.",fonteVedacao:"Item 5.5(d)",url:"https://www.gov.br/cnpq/"},
- {nome:"Programa Demonstrativo de Infraestrutura Universitária",orgao:"Instituição demonstrativa",area:"Infraestrutura",naturezas:["Infraestrutura","Equipamentos"],publicos:["Comunidade acadêmica"],instituicoes:["UFLA","IFES","Universidade Pública"],abrangencia:"Nacional",estados:[],valorMin:500000,valorMax:3000000,tipoRecurso:"Equipamentos / bens / infraestrutura",fonte:"Governo Federal",instrumento:"Convênio",prazo:"30/11/2026",taxaVedada:false,vedacao:"",fonteVedacao:"",url:"https://www.gov.br/"},
- {nome:"Programa Demonstrativo de Desenvolvimento Rural em MG",orgao:"Instituição demonstrativa",area:"Desenvolvimento rural",naturezas:["Extensão","Pesquisa"],publicos:["Produtores rurais"],instituicoes:["UFLA","ICT","Universidade Pública"],abrangencia:"Estadual",estados:["MG"],valorMin:100000,valorMax:800000,tipoRecurso:"Recurso não reembolsável / fomento",fonte:"Governo Estadual",instrumento:"Acordo de Cooperação",prazo:"15/12/2026",taxaVedada:false,vedacao:"",fonteVedacao:"",url:"https://www.gov.br/"}
+ {nome:"Chamada CNPq/MCTI/FNDCT Nº 44/2024 - UNIVERSAL",orgao:"CNPq / MCTI / FNDCT",area:"Ciência, tecnologia e inovação",naturezas:["Pesquisa"],publicos:["Pesquisadores"],instituicoes:["UFLA","IFES","ICT","Universidade Pública"],abrangencia:"Nacional",estados:[],valorMin:0,valorMax:300000,tipoRecurso:"Auxílio à pesquisa",fonte:"Governo Federal",instrumento:"Termo de Outorga",prazo:"30/01/2025",taxaVedada:true,vedacao:"São vedadas despesas com pagamento de taxas de administração, de gerência, a qualquer título.",fonteVedacao:"Item 5.5(d)",url:""},
+ {nome:"Programa Demonstrativo de Infraestrutura Universitária",orgao:"Instituição demonstrativa",area:"Infraestrutura",naturezas:["Infraestrutura","Equipamentos"],publicos:["Comunidade acadêmica"],instituicoes:["UFLA","IFES","Universidade Pública"],abrangencia:"Nacional",estados:[],valorMin:500000,valorMax:3000000,tipoRecurso:"Equipamentos / bens / infraestrutura",fonte:"Governo Federal",instrumento:"Convênio",prazo:"30/11/2026",taxaVedada:false,vedacao:"",fonteVedacao:"",url:""},
+ {nome:"Programa Demonstrativo de Desenvolvimento Rural em MG",orgao:"Instituição demonstrativa",area:"Desenvolvimento rural",naturezas:["Extensão","Pesquisa"],publicos:["Produtores rurais"],instituicoes:["UFLA","ICT","Universidade Pública"],abrangencia:"Estadual",estados:["MG"],valorMin:100000,valorMax:800000,tipoRecurso:"Recurso não reembolsável / fomento",fonte:"Governo Estadual",instrumento:"Acordo de Cooperação",prazo:"15/12/2026",taxaVedada:false,vedacao:"",fonteVedacao:"",url:""}
 ];
 
 function openModule(m){
@@ -241,6 +241,18 @@ function norm(s){return String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/
 function formatDate(s){if(!s)return "—";const d=new Date(s);return isNaN(d)?s:d.toLocaleDateString("pt-BR")}
 function pick(obj,keys,fallback="—"){for(const k of keys){if(obj&&obj[k]!==undefined&&obj[k]!==null&&obj[k]!=="")return obj[k]}return fallback}
 
+
+function renderSourceButton(e){
+ const url=(e.url||"").trim();
+ const generic = !url || url==="https://www.gov.br/" || url==="https://gov.br/" || url==="https://www.gov.br";
+ if(generic){
+   return `<button class="secondary" disabled title="Cadastre o link direto do edital, chamada ou PDF oficial.">Fonte específica ainda não cadastrada</button>`;
+ }
+ const lower=url.toLowerCase();
+ const label = lower.endsWith(".pdf") || lower.includes(".pdf?") ? "Abrir PDF do edital" : "Abrir edital oficial";
+ return `<a href="${url}" target="_blank" rel="noopener"><button class="primary">${label}</button></a>`;
+}
+
 function clearEditalFilters(){
  ["state","area","nature","audience","resourceType","fundingSource","instrument","minValue","maxValue"].forEach(id=>document.getElementById(id).value="");
  document.getElementById("institution").value="UFLA";document.getElementById("resultsCard").classList.add("hidden")
@@ -256,7 +268,7 @@ function findMatches(){
   let score=0;if(!f.institution||e.instituicoes.includes(f.institution))score+=20;if(!f.state||matchState(e,f.state))score+=10;if(!f.area||e.area===f.area)score+=20;if(!f.nature||e.naturezas.includes(f.nature))score+=10;if(!f.audience||e.publicos.includes(f.audience))score+=10;if(!f.resourceType||e.tipoRecurso===f.resourceType)score+=10;if(!f.fundingSource||e.fonte===f.fundingSource)score+=5;if(!f.instrument||e.instrumento===f.instrument)score+=5;if((!f.minValue&&!f.maxValue)||matchRange(e,f.minValue,f.maxValue))score+=5;if(deadlineViable(e.prazo))score+=5;return{...e,score,priority:e.taxaVedada?"Prioridade secundária":"Prioridade alta",priorityClass:e.taxaVedada?"medium":"high"}
  }).sort((a,b)=>b.score-a.score);
  document.getElementById("resultsSummary").textContent=`${list.length} oportunidade(s) encontrada(s). Campos sem seleção foram tratados como “todas as opções”.`;
- document.getElementById("resultsList").innerHTML=list.length?list.map(e=>`<article class="result"><span class="badge ${e.score>=80?'high':e.score>=60?'medium':'low'}">${e.score}% compatibilidade</span><span class="badge ${e.priorityClass}">${e.priority}</span><h3>${e.nome}</h3><div class="meta">${e.orgao} · ${e.area} · ${e.abrangencia} · ${money(e.valorMin)} a ${money(e.valorMax)} · Prazo ${e.prazo}</div><div style="margin-top:8px">${e.naturezas.map(x=>`<span class="pill">${x}</span>`).join("")}<span class="pill">${e.tipoRecurso}</span><span class="pill">${e.instrumento}</span></div><div class="box ${e.priorityClass}"><strong>${e.priority}</strong><br>${e.taxaVedada?`Há vedação institucional relevante relacionada a taxas administrativas/gerenciais.<br><br><strong>Vedação:</strong> ${e.vedacao}<br><strong>Fonte:</strong> ${e.fonteVedacao}`:`Sem vedação de taxa administrativa/gerencial cadastrada neste exemplo.`}</div><ul><li>Conferir elegibilidade específica da UFLA</li><li>Revisar itens financiáveis e vedações</li><li>Confirmar possibilidade/necessidade de fundação de apoio</li><li>Validar regras administrativas, financeiras e jurídicas</li></ul><a href="${e.url}" target="_blank" rel="noopener"><button class="primary">Ver fonte oficial</button></a></article>`).join(""):`<p>Nenhuma oportunidade da base atual corresponde aos filtros.</p>`;
+ document.getElementById("resultsList").innerHTML=list.length?list.map(e=>`<article class="result"><span class="badge ${e.score>=80?'high':e.score>=60?'medium':'low'}">${e.score}% compatibilidade</span><span class="badge ${e.priorityClass}">${e.priority}</span><h3>${e.nome}</h3><div class="meta">${e.orgao} · ${e.area} · ${e.abrangencia} · ${money(e.valorMin)} a ${money(e.valorMax)} · Prazo ${e.prazo}</div><div style="margin-top:8px">${e.naturezas.map(x=>`<span class="pill">${x}</span>`).join("")}<span class="pill">${e.tipoRecurso}</span><span class="pill">${e.instrumento}</span></div><div class="box ${e.priorityClass}"><strong>${e.priority}</strong><br>${e.taxaVedada?`Há vedação institucional relevante relacionada a taxas administrativas/gerenciais.<br><br><strong>Vedação:</strong> ${e.vedacao}<br><strong>Fonte:</strong> ${e.fonteVedacao}`:`Sem vedação de taxa administrativa/gerencial cadastrada neste exemplo.`}</div><ul><li>Conferir elegibilidade específica da UFLA</li><li>Revisar itens financiáveis e vedações</li><li>Confirmar possibilidade/necessidade de fundação de apoio</li><li>Validar regras administrativas, financeiras e jurídicas</li></ul>${renderSourceButton(e)}</article>`).join(""):`<p>Nenhuma oportunidade da base atual corresponde aos filtros.</p>`;
  document.getElementById("resultsCard").classList.remove("hidden")
 }
 
