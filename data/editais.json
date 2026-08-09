@@ -1,55 +1,59 @@
 {
-  "geradoEm": "2026-08-09T12:00:00+00:00",
-  "totalEditais": 4,
+  "geradoEm": "2026-08-09T12:20:19.953806+00:00",
+  "totalEditais": 22,
   "erros": [],
   "editais": [
     {
-      "nome": "CHAMADA FAPEMIG 16/2026 - EPAMIG 5.0: Desenvolvimento de Soluções Científicas, Tecnológicas e de Inovação para a Agricultura do Futuro",
-      "orgao": "FAPEMIG",
-      "area": "Agricultura e agropecuária",
-      "naturezas": ["Pesquisa"],
-      "publicos": ["Pesquisadores"],
-      "instituicoes": ["UFLA", "ICT", "Universidade Pública"],
-      "abrangencia": "Estadual",
-      "estados": ["MG"],
-      "valorMin": 0,
-      "valorMax": 10000000,
-      "tipoRecurso": "Auxílio à Pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "24/08/2026",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-16-2026-epamig-5-0-desenvolvimento-de-solucoes-cientificas-tecnologicas-e-de-inovacao-para-a-agricultura-do-futuro"
-    },
-    {
-      "nome": "CHAMADA FAPEMIG 01/2026 - Demanda Universal",
-      "orgao": "FAPEMIG",
+      "nome": "Chamada CNPq/CT-Biotec/FNDCT/MCTI Nº 24/2026 - Apoio à Pesquisa, Desenvolvimento e Inovação em Biotecnologia",
+      "orgao": "CNPq",
       "area": "Multidisciplinar / Outros",
-      "naturezas": ["Pesquisa"],
-      "publicos": ["Pesquisadores"],
-      "instituicoes": ["UFLA", "ICT", "Universidade Pública"],
-      "abrangencia": "Estadual",
-      "estados": ["MG"],
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
       "valorMin": 0,
-      "valorMax": 90000000,
-      "tipoRecurso": "Auxílio à Pesquisa",
-      "fonte": "Governo Estadual",
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
       "instrumento": "Termo de Outorga",
-      "prazo": "14/04/2025",
+      "prazo": "18/09/2026",
       "taxaVedada": false,
       "vedacao": "",
       "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-01-2026-demanda-universal-10765"
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/chamada-publica-cnpq-N-24-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "03/08/2026",
+      "_inscricaoInicio": "03/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/Chamada_24_2026.pdf"
+      ]
     },
     {
       "nome": "Chamada CNPq/MCTI nº 25/2026 - Endometriose e Saúde Menstrual",
       "orgao": "CNPq",
-      "area": "Saúde",
-      "naturezas": ["Pesquisa"],
-      "publicos": ["Pesquisadores"],
-      "instituicoes": ["UFLA", "IFES", "ICT", "Universidade Pública"],
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
       "abrangencia": "Nacional",
       "estados": [],
       "valorMin": 0,
@@ -61,15 +65,255 @@
       "taxaVedada": false,
       "vedacao": "",
       "fonteVedacao": "",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/chamada-publica-cnpq-N-25-2026"
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/chamada-publica-cnpq-N-25-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "10/07/2026",
+      "_inscricaoInicio": "10/07/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/Chamada252026EndometrioseeSadeMenstrual.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/AnexoIProjetodePesquisaChamadaEndometrioseeSadeMenstrual.docx",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/AnexoIProjetodePesquisaChamada252026.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada CNPq/MinC nº 17/2026 - Apoio ao funcionamento de incubadoras voltadas à Economia Criativa",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "10/08/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-17-2026/chamada-publica-cnpq-N-17-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "19/06/2026",
+      "_inscricaoInicio": "19/06/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-17-2026/Chamada_CNPq_MinC_17_2026.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-17-2026/FAQ_Chamada_CNPq_MinC_17_2026.pdf"
+      ]
+    },
+    {
+      "nome": "Chamamento Público CNPq/FNDCT/MCTI Nº 01/2026 Para Participação no Programa de Apoio à Popularização da Ciência nas Unidades da Federação",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "17/08/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/chamamento-publico-01-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "02/07/2026",
+      "_inscricaoInicio": "02/07/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_Popularizacao_UF_DF_v_2_7_26.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_01_2026_Anexo_I_PopUF.xlsx",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_01_2026_PopUF_Anexo_II.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_01_2026_PopUF_Anexo_III.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/MMULHERES Nº 19/2026 - Programa Asas para o Futuro",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "10/08/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada-publica-cnpq-N-19-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "30/06/2026",
+      "_inscricaoInicio": "30/06/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada_publica_19_2026_asas_para_futuro_2713513.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/copy2_of_Formulario_de_Proposta_Institucional___Anexo_I.xls",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/Anexo_II___Lista_de_manifestacao_de_interesse_do_Publico_Alvo.xls",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/Anexo_III___Documentacao_do_representante_institucional.docx",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/Anexo_III___Documentacao_do_representante_institucional.docx"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/MCTI nº 15/2026 - Programa de Cooperação Afro-Brasileira em Ciência e Tecnologia - PROAFRICA",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "31/08/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/chamada-publica-cnpq-N-15-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "25/05/2026",
+      "_inscricaoInicio": "25/05/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/CHAMADA152026PROAFRICASEI2679821.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/FAQPROAFRICACHAMADA152026SEI_CNPq2687944Anexo.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada CNPq/SETEC/MCTI N° 13/2026 - Apoio a Eventos de Promoção do Empreendedorismo e da Inovação no Brasil",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/chamada-publica-cnpq-N-13-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "28/04/2026",
+      "_inscricaoInicio": "",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Chamada_CNPq_SETEC_MCTI_13_2026_atualizao_2.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Resultadofinal_chamada_13_2026_eventos_internacionais_2732685.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Resultadofinal_chamada_13_2026_eventos_nacionais_2732680.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_internacionais_chamada_13_2026_2714540.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_nacionais_chamada_13_2026_2714539.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/ERC Nº 21/2026",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "30/09/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/chamada-publica-cnpq-N-21-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "04/08/2026",
+      "_inscricaoInicio": "03/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/ChamadaPblicaERC_21_2026_2717210.pdf"
+      ]
     },
     {
       "nome": "Chamada Pública CNPq/CAPES/MRE N° 16/2026 - Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG)",
       "orgao": "CNPq",
-      "area": "Internacionalização",
-      "naturezas": ["Cooperação", "Formação / capacitação"],
-      "publicos": ["Estudantes", "Comunidade acadêmica"],
-      "instituicoes": ["UFLA", "IFES", "ICT", "Universidade Pública"],
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
       "abrangencia": "Nacional",
       "estados": [],
       "valorMin": 0,
@@ -81,7 +325,447 @@
       "taxaVedada": false,
       "vedacao": "",
       "fonteVedacao": "",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/chamada-publica-cnpq-N-16-2026"
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/chamada-publica-cnpq-N-16-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "29/06/2026",
+      "_inscricaoInicio": "29/06/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/copy_of_ChamadaPblica_CNPq_CAPES_MRE_16_2026_2717524.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/ANEXO_I___Chamada_PEC_PG_16_2026.xls",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/ANEXO_II_Chamada_CNPq_PEC_PG_16_2026.docx"
+      ]
+    },
+    {
+      "nome": "Chamada Pública MCTI/CNPq/MIR/MMulheres/MPI Nº 20/2026 Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "30/09/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada-publica-cnpq-N-20-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "30/06/2026",
+      "_inscricaoInicio": "30/06/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada_publica_20_2026_atlanticas_2714776.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/lista_conae_2736172.pdf"
+      ]
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-013-2026-pesquisador-na-empresa",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-007-2026-organizacao-de-eventos-de-carater-tecnico-cientifico-oet-2a-entrada",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/diretriz-502-2026-chamada-publica-de-cooperacao-internacional-water4all-2025-2026-water-and-health",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-16-2026-epamig-5-0-desenvolvimento-de-solucoes-cientificas-tecnologicas-e-de-inovacao-para-a-agricultura-do-futuro",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/fapemig-sede-compete-minas",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-0xx-202x-cientista-empreendedor",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/diretriz-501-2026-chamada-publica-de-cooperacao-internacional-biodiversa-biodivconnect-2025-2026-restauracao-do-funcionamento-integridade-e-conectividade-do-ecossistema",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-15-2026-laboratorios-certificadores",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-12-2026-treinamentos-individuais-e-coletivos-pelo-programa-de-capacitacao-de-recursos-humanos-pcrh",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-009-2026-eventech-organizacao-de-eventos-de-inovacao-e-empreendedorismo-tecnologico",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-08-2026-bolsas-de-pos-graduacao-doutorado-sanduiche-e-estagio-pos-doutoral-no-exterior-pelo-programa-de-capacitacao-de-recursos-humanos-pcrh",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/programa-centelha-3-programa-nacional-de-apoio-a-geracao-de-empreendimentos-inovadores",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
     }
   ]
 }
