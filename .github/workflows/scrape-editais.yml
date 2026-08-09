@@ -1,0 +1,38 @@
+name: Atualizar editais (scraper)
+
+on:
+  schedule:
+    # Todo dia às 06:00 UTC (~03h em Brasília)
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}   # permite rodar manualmente pela aba Actions no GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: |
+          pip install -r scraper/requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Rodar scraper
+        run: python scraper/run.py
+
+      - name: Commitar data/editais.json se houver mudanças
+        run: |
+          git config user.name "captaeditais-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/editais.json
+          git diff --cached --quiet && echo "Sem mudanças." || git commit -m "chore: atualizar editais ($(date -u +'%Y-%m-%d'))"
+          git push
