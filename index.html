@@ -3,68 +3,475 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#111827">
-<title>CaptaEditais — V2</title>
+<meta name="theme-color" content="#0f172a">
+<title>CaptaEditais — V3</title>
 <style>
-:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#667085;--line:#e4e7ec;--primary:#111827;--green:#067647;--greenbg:#ecfdf3;--yellow:#a15c00;--yellowbg:#fffaeb;--red:#b42318;--redbg:#fef3f2}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.5}
-.container{max-width:1040px;margin:auto;padding:20px}.hero{background:var(--primary);color:#fff;padding:38px 24px;border-radius:0 0 24px 24px}.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:0;color:#d0d5dd}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 4px 16px rgba(16,24,40,.04)}
-h2{margin-top:0;font-size:22px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(max-width:680px){.grid{grid-template-columns:1fr}.hero h1{font-size:27px}}
-label{display:block;font-weight:700;margin-bottom:7px}select,input{width:100%;padding:13px;border:1px solid #d0d5dd;border-radius:10px;background:#fff;font-size:15px}
-button{border:0;border-radius:10px;padding:13px 18px;font-weight:700;font-size:15px;cursor:pointer}.primary{background:#111827;color:#fff}.secondary{background:#eef2f6;color:#111827}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.hidden{display:none}.badge{display:inline-block;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:800;margin-right:6px}.high{background:var(--greenbg);color:var(--green)}.medium{background:var(--yellowbg);color:var(--yellow)}.low{background:var(--redbg);color:var(--red)}
-.result{border:1px solid var(--line);border-radius:15px;padding:18px;margin:14px 0}.result h3{margin:7px 0}.meta{color:var(--muted);font-size:14px}.box{border-radius:12px;padding:14px;margin:12px 0}.notice{background:#fff7ed;border:1px solid #fed7aa;padding:14px;border-radius:12px;font-size:14px;color:#7c2d12}
+:root{
+  --bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#667085;--line:#dfe3ea;--primary:#0f172a;
+  --green:#067647;--greenbg:#ecfdf3;--yellow:#a15c00;--yellowbg:#fffaeb;--red:#b42318;--redbg:#fef3f2;
+  --blue:#175cd3;--bluebg:#eff8ff
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.5}
+.container{max-width:1120px;margin:auto;padding:20px}
+.hero{background:var(--primary);color:white;padding:36px 24px;border-radius:0 0 24px 24px}
+.hero h1{margin:0 0 6px;font-size:32px}.hero p{margin:0;color:#d0d5dd}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 4px 18px rgba(16,24,40,.04)}
+h2{margin-top:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.grid,.grid3{grid-template-columns:1fr}.hero h1{font-size:27px}}
+label{display:block;font-weight:700;margin-bottom:7px}
+select,input{width:100%;padding:13px;border:1px solid #d0d5dd;border-radius:10px;background:#fff;font-size:15px}
+button{border:0;border-radius:10px;padding:12px 17px;font-weight:700;font-size:15px;cursor:pointer}
+.primary{background:var(--primary);color:#fff}.secondary{background:#eef2f6;color:#111827}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.hidden{display:none}.notice{background:#fff7ed;border:1px solid #fed7aa;padding:14px;border-radius:12px;color:#7c2d12;font-size:14px}
+.infoBox{background:var(--bluebg);border:1px solid #b2ddff;padding:14px;border-radius:12px;color:#1849a9;font-size:14px}
 .tabs{display:flex;gap:8px;flex-wrap:wrap}.tab{background:#eef2f6}.tab.active{background:#111827;color:#fff}
-table{width:100%;border-collapse:collapse;margin-top:12px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}th{background:#f8fafc}.small{font-size:13px;color:var(--muted)}
+.badge{display:inline-block;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:800;margin-right:6px;margin-bottom:6px}
+.high{background:var(--greenbg);color:var(--green)}.medium{background:var(--yellowbg);color:var(--yellow)}.low{background:var(--redbg);color:var(--red)}
+.result{border:1px solid var(--line);border-radius:15px;padding:18px;margin:14px 0}.result h3{margin:7px 0}.meta{color:var(--muted);font-size:14px}
+.box{border-radius:12px;padding:14px;margin:12px 0}.small{font-size:13px;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+@media(max-width:760px){.kpis{grid-template-columns:1fr}}
+.kpi{border:1px solid var(--line);border-radius:14px;padding:14px}.kpi strong{display:block;font-size:22px}
+table{width:100%;border-collapse:collapse;margin-top:12px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;font-size:14px;vertical-align:top}th{background:#f8fafc}
+.scroll{overflow-x:auto}.pill{font-size:12px;background:#eef2f6;padding:4px 7px;border-radius:999px;display:inline-block;margin:2px}
 </style>
 </head>
 <body>
-<header class="hero"><div class="container"><h1>🎯 CaptaEditais</h1><p>Triagem institucional de oportunidades de captação e monitoramento de TEDs.</p></div></header>
+<header class="hero">
+  <div class="container">
+    <h1>🎯 CaptaEditais</h1>
+    <p>Radar institucional de oportunidades, elegibilidade e TEDs.</p>
+  </div>
+</header>
+
 <main class="container">
 <section class="card">
-<div class="tabs"><button class="tab active" id="tabE" onclick="openModule('editais')">Radar de Editais</button><button class="tab" id="tabT" onclick="openModule('teds')">Radar de TEDs</button></div>
-<div class="notice" style="margin-top:14px">O CaptaEditais auxilia na triagem institucional. A classificação não substitui a leitura integral do edital nem a análise jurídica, administrativa ou financeira da instituição.</div>
+  <div class="tabs">
+    <button class="tab active" id="tabEditais" onclick="openModule('editais')">Radar de Editais</button>
+    <button class="tab" id="tabTeds" onclick="openModule('teds')">Radar de TEDs</button>
+  </div>
+  <div class="notice" style="margin-top:14px">
+    O CaptaEditais auxilia na triagem institucional. A classificação não substitui a leitura integral do edital nem a análise jurídica, administrativa ou financeira da instituição.
+  </div>
 </section>
 
 <section id="editaisModule">
-<section id="home" class="card"><h2>Comece seu diagnóstico</h2><p>Responda algumas perguntas para priorizar oportunidades.</p><button class="primary" onclick="showE('form')">Encontrar editais</button></section>
-<section id="form" class="card hidden"><h2>Perfil do projeto</h2><div class="grid">
-<div><label>Tipo de organização</label><select id="org"><option value="">Selecione</option><option>ICT / Universidade</option><option>Instituição educacional</option><option>ONG / OSC</option><option>Órgão público</option></select></div>
-<div><label>Estado</label><select id="state"><option value="">Selecione</option><option>MG</option><option>SP</option><option>RJ</option><option>DF</option><option>Outro</option></select></div>
-<div><label>Área do projeto</label><select id="area"><option value="">Selecione</option><option>Ciência, tecnologia e inovação</option><option>Educação</option><option>Cultura</option><option>Assistência social</option></select></div>
-<div><label>Público beneficiado</label><select id="audience"><option value="">Selecione</option><option>Pesquisadores</option><option>Jovens</option><option>Comunidade em geral</option></select></div>
-<div><label>Valor pretendido</label><input id="amount" type="number" placeholder="Ex.: 100000"></div>
-<div><label>Tipo de recurso</label><select id="resource"><option value="">Selecione</option><option>Auxílio à pesquisa</option><option>Fundo / financiamento</option><option>Doação</option></select></div>
-</div><div class="actions"><button class="primary" onclick="findMatches()">Ver oportunidades</button><button class="secondary" onclick="showE('home')">Voltar</button></div></section>
-<section id="results" class="card hidden"><h2>Oportunidades encontradas</h2><div id="resultsList"></div><button class="secondary" onclick="showE('form')">Refazer busca</button></section>
+  <section class="card">
+    <h2>Perfil institucional</h2>
+    <div class="infoBox">
+      Perfil padrão: <strong>Universidade Federal de Lavras — UFLA</strong>. Quando um filtro ficar sem seleção, o sistema considera automaticamente <strong>todas as opções</strong>.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Filtros da oportunidade</h2>
+    <div class="grid">
+      <div>
+        <label>Instituição / perfil</label>
+        <select id="institution">
+          <option value="">Todas as instituições / sem restrição</option>
+          <option value="UFLA" selected>UFLA — Universidade Federal de Lavras</option>
+          <option value="IFES">Instituição Federal de Ensino Superior (IFES)</option>
+          <option value="ICT">Instituição Científica, Tecnológica e de Inovação (ICT)</option>
+          <option value="Universidade Pública">Universidade pública</option>
+        </select>
+      </div>
+      <div>
+        <label>Estado / abrangência</label>
+        <select id="state">
+          <option value="">Todo o Brasil / sem restrição</option>
+          <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MG</option><option>MS</option><option>MT</option><option>PA</option><option>PB</option><option>PE</option><option>PI</option><option>PR</option><option>RJ</option><option>RN</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SE</option><option>SP</option><option>TO</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Área temática</label>
+        <select id="area">
+          <option value="">Todas as áreas</option>
+          <option>Agricultura e agropecuária</option>
+          <option>Ciência, tecnologia e inovação</option>
+          <option>Educação</option>
+          <option>Pesquisa científica</option>
+          <option>Extensão universitária</option>
+          <option>Meio ambiente e sustentabilidade</option>
+          <option>Mudanças climáticas</option>
+          <option>Recursos hídricos</option>
+          <option>Energia</option>
+          <option>Saúde</option>
+          <option>Cultura</option>
+          <option>Esporte</option>
+          <option>Assistência e desenvolvimento social</option>
+          <option>Desenvolvimento rural</option>
+          <option>Segurança alimentar</option>
+          <option>Empreendedorismo e inovação</option>
+          <option>Transformação digital</option>
+          <option>Infraestrutura</option>
+          <option>Desenvolvimento regional e territorial</option>
+          <option>Bioeconomia e biodiversidade</option>
+          <option>Internacionalização</option>
+          <option>Capacitação e formação</option>
+          <option>Multidisciplinar / Outros</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Natureza do projeto</label>
+        <select id="nature">
+          <option value="">Todas as naturezas</option>
+          <option>Pesquisa</option>
+          <option>Extensão</option>
+          <option>Ensino</option>
+          <option>Inovação</option>
+          <option>Infraestrutura</option>
+          <option>Desenvolvimento institucional</option>
+          <option>Formação / capacitação</option>
+          <option>Evento</option>
+          <option>Bolsas</option>
+          <option>Cooperação</option>
+          <option>Equipamentos</option>
+          <option>Outros</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Público beneficiado</label>
+        <select id="audience">
+          <option value="">Todos os públicos</option>
+          <option>Pesquisadores</option>
+          <option>Estudantes</option>
+          <option>Docentes</option>
+          <option>Produtores rurais</option>
+          <option>Empreendedores</option>
+          <option>Comunidade acadêmica</option>
+          <option>Comunidade em geral</option>
+          <option>Gestores públicos</option>
+          <option>Outro público</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Tipo de recurso</label>
+        <select id="resourceType">
+          <option value="">Todos os tipos de recurso</option>
+          <option>Recurso não reembolsável / fomento</option>
+          <option>Auxílio à pesquisa</option>
+          <option>Bolsa</option>
+          <option>Chamada pública / seleção de projetos</option>
+          <option>TED</option>
+          <option>Convênio / transferência voluntária</option>
+          <option>Emenda parlamentar</option>
+          <option>Contrato / encomenda tecnológica</option>
+          <option>Prêmio</option>
+          <option>Doação</option>
+          <option>Patrocínio</option>
+          <option>Financiamento reembolsável</option>
+          <option>Cooperação com aporte financeiro</option>
+          <option>Equipamentos / bens / infraestrutura</option>
+          <option>Outros</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Fonte / origem do recurso</label>
+        <select id="fundingSource">
+          <option value="">Todas as fontes</option>
+          <option>Governo Federal</option>
+          <option>Governo Estadual</option>
+          <option>Governo Municipal</option>
+          <option>Agência de fomento</option>
+          <option>Fundos setoriais</option>
+          <option>Empresa privada</option>
+          <option>Organização internacional</option>
+          <option>Fundação</option>
+          <option>Outro</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Instrumento</label>
+        <select id="instrument">
+          <option value="">Todos os instrumentos</option>
+          <option>TED</option>
+          <option>Termo de Outorga</option>
+          <option>Convênio</option>
+          <option>Acordo de Cooperação</option>
+          <option>Contrato</option>
+          <option>Doação</option>
+          <option>Patrocínio</option>
+          <option>Outro</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Valor mínimo — a partir de</label>
+        <input id="minValue" type="number" min="0" step="1000" placeholder="Sem mínimo">
+      </div>
+      <div>
+        <label>Valor máximo — até</label>
+        <input id="maxValue" type="number" min="0" step="1000" placeholder="Sem máximo">
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="primary" onclick="findMatches()">Ver oportunidades</button>
+      <button class="secondary" onclick="clearEditalFilters()">Limpar filtros</button>
+    </div>
+  </section>
+
+  <section id="resultsCard" class="card hidden">
+    <h2>Oportunidades encontradas</h2>
+    <p id="resultsSummary" class="small"></p>
+    <div id="resultsList"></div>
+  </section>
 </section>
 
-<section id="tedsModule" class="hidden"><section class="card"><h2>Radar de TEDs</h2><p>Módulo demonstrativo para mapear TEDs vigentes, valores, órgãos e responsáveis.</p>
-<table><thead><tr><th>TED</th><th>Órgão</th><th>Objeto</th><th>Valor</th><th>Vigência</th><th>Responsável</th><th>Situação</th></tr></thead><tbody>
-<tr><td>TED 001/2026</td><td>MCTI</td><td>Apoio a ações de CT&I</td><td>R$ 1.800.000</td><td>31/12/2027</td><td>Demonstrativo</td><td>Vigente</td></tr>
-<tr><td>TED 002/2026</td><td>MEC</td><td>Ações de ensino e extensão</td><td>R$ 950.000</td><td>30/06/2027</td><td>Demonstrativo</td><td>Vigente</td></tr>
-</tbody></table><p class="small">Base demonstrativa. Substitua por dados públicos validados antes de uso institucional.</p></section></section>
+<section id="tedsModule" class="hidden">
+  <section class="card">
+    <h2>Radar de TEDs</h2>
+    <div class="infoBox">
+      Estrutura preparada para integração com a API oficial de Dados Abertos do módulo TED do Transferegov. Como o endpoint exato e os nomes dos campos precisam seguir a documentação oficial, esta versão não inventa uma chamada de API. O modo abaixo já deixa os filtros e a estrutura prontos.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Filtros de TED</h2>
+    <div class="grid3">
+      <div>
+        <label>Universidade / unidade descentralizada</label>
+        <select id="tedInstitution">
+          <option value="">Todas as instituições</option>
+          <option value="UFLA" selected>UFLA — Universidade Federal de Lavras</option>
+          <option>Outra universidade / instituição</option>
+        </select>
+      </div>
+      <div>
+        <label>Órgão / ministério descentralizador</label>
+        <input id="tedOrg" placeholder="Todos os órgãos">
+      </div>
+      <div>
+        <label>Situação</label>
+        <select id="tedStatus">
+          <option value="">Todas as situações</option>
+          <option>Vigente</option>
+          <option>Encerrado</option>
+          <option>Em execução</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div>
+        <label>Ano</label>
+        <input id="tedYear" type="number" min="2000" max="2100" placeholder="Todos os anos">
+      </div>
+      <div>
+        <label>Valor mínimo</label>
+        <input id="tedMinValue" type="number" min="0" step="1000" placeholder="Sem mínimo">
+      </div>
+      <div>
+        <label>Valor máximo</label>
+        <input id="tedMaxValue" type="number" min="0" step="1000" placeholder="Sem máximo">
+      </div>
+      <div style="grid-column:1/-1">
+        <label>Palavra no objeto</label>
+        <input id="tedKeyword" placeholder="Ex.: inovação, agricultura, laboratório — vazio = todos">
+      </div>
+    </div>
+    <div class="actions">
+      <button class="primary" onclick="searchTeds()">Pesquisar TEDs</button>
+      <button class="secondary" onclick="clearTedFilters()">Limpar filtros</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="kpis" id="tedKpis">
+      <div class="kpi"><span>TEDs encontrados</span><strong>0</strong></div>
+      <div class="kpi"><span>Valor total</span><strong>R$ 0</strong></div>
+      <div class="kpi"><span>Órgãos distintos</span><strong>0</strong></div>
+    </div>
+    <div id="tedStatusMessage" class="small">Nenhuma consulta executada nesta versão.</div>
+    <div id="tedResults" class="scroll"></div>
+  </section>
+</section>
 </main>
 
 <script>
-const editais=[
-{id:1,nome:"Chamada CNPq/MCTI/FNDCT Nº 44/2024 - UNIVERSAL",orgao:"CNPq / MCTI / FNDCT",area:"Ciência, tecnologia e inovação",max:300000,audiencias:["Pesquisadores"],instituicoes:["ICT / Universidade","Instituição educacional"],prazo:"30/01/2025",vedacao:true,texto:"São vedadas despesas com pagamento de taxas de administração, de gerência, a qualquer título.",fonte:"Item 5.5(d)",url:"https://www.gov.br/cnpq/"},
-{id:2,nome:"Programa Demonstrativo de Educação",orgao:"Instituição demonstrativa",area:"Educação",max:150000,audiencias:["Jovens"],instituicoes:["Instituição educacional","ICT / Universidade"],prazo:"15/10/2026",vedacao:false,texto:"",fonte:"",url:"https://www.gov.br/"}
+const editais = [
+ {
+  nome:"Chamada CNPq/MCTI/FNDCT Nº 44/2024 - UNIVERSAL",
+  orgao:"CNPq / MCTI / FNDCT",
+  area:"Ciência, tecnologia e inovação",
+  naturezas:["Pesquisa"],
+  publicos:["Pesquisadores"],
+  instituicoes:["UFLA","IFES","ICT","Universidade Pública"],
+  abrangencia:"Nacional",
+  estados:[],
+  valorMin:0,
+  valorMax:300000,
+  tipoRecurso:"Auxílio à pesquisa",
+  fonte:"Governo Federal",
+  instrumento:"Termo de Outorga",
+  prazo:"30/01/2025",
+  taxaVedada:true,
+  vedacao:"São vedadas despesas com pagamento de taxas de administração, de gerência, a qualquer título.",
+  fonteVedacao:"Item 5.5(d)",
+  url:"https://www.gov.br/cnpq/"
+ },
+ {
+  nome:"Programa Demonstrativo de Infraestrutura Universitária",
+  orgao:"Instituição demonstrativa",
+  area:"Infraestrutura",
+  naturezas:["Infraestrutura","Equipamentos"],
+  publicos:["Comunidade acadêmica"],
+  instituicoes:["UFLA","IFES","Universidade Pública"],
+  abrangencia:"Nacional",
+  estados:[],
+  valorMin:500000,
+  valorMax:3000000,
+  tipoRecurso:"Equipamentos / bens / infraestrutura",
+  fonte:"Governo Federal",
+  instrumento:"Convênio",
+  prazo:"30/11/2026",
+  taxaVedada:false,
+  vedacao:"",
+  fonteVedacao:"",
+  url:"https://www.gov.br/"
+ },
+ {
+  nome:"Programa Demonstrativo de Desenvolvimento Rural em MG",
+  orgao:"Instituição demonstrativa",
+  area:"Desenvolvimento rural",
+  naturezas:["Extensão","Pesquisa"],
+  publicos:["Produtores rurais"],
+  instituicoes:["UFLA","ICT","Universidade Pública"],
+  abrangencia:"Estadual",
+  estados:["MG"],
+  valorMin:100000,
+  valorMax:800000,
+  tipoRecurso:"Recurso não reembolsável / fomento",
+  fonte:"Governo Estadual",
+  instrumento:"Acordo de Cooperação",
+  prazo:"15/12/2026",
+  taxaVedada:false,
+  vedacao:"",
+  fonteVedacao:"",
+  url:"https://www.gov.br/"
+ }
 ];
-function openModule(m){document.getElementById("editaisModule").classList.toggle("hidden",m!=="editais");document.getElementById("tedsModule").classList.toggle("hidden",m!=="teds");document.getElementById("tabE").classList.toggle("active",m==="editais");document.getElementById("tabT").classList.toggle("active",m==="teds")}
-function showE(id){["home","form","results"].forEach(x=>document.getElementById(x).classList.add("hidden"));document.getElementById(id).classList.remove("hidden")}
-function v(id){return document.getElementById(id).value}
+
+function openModule(m){
+ document.getElementById("editaisModule").classList.toggle("hidden",m!=="editais");
+ document.getElementById("tedsModule").classList.toggle("hidden",m!=="teds");
+ document.getElementById("tabEditais").classList.toggle("active",m==="editais");
+ document.getElementById("tabTeds").classList.toggle("active",m==="teds");
+}
+
+function val(id){ return document.getElementById(id).value; }
+function num(id){ const v=Number(val(id)); return Number.isFinite(v) && v>0 ? v : null; }
+function money(v){ return "R$ " + Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:0}); }
+
+function clearEditalFilters(){
+ ["state","area","nature","audience","resourceType","fundingSource","instrument","minValue","maxValue"].forEach(id=>document.getElementById(id).value="");
+ document.getElementById("institution").value="UFLA";
+ document.getElementById("resultsCard").classList.add("hidden");
+}
+
+function matchState(e, state){
+ if(!state) return true;
+ if(e.abrangencia==="Nacional") return true;
+ return e.estados.includes(state);
+}
+function matchRange(e,minV,maxV){
+ if(minV && e.valorMax < minV) return false;
+ if(maxV && e.valorMin > maxV) return false;
+ return true;
+}
+function deadlineViable(prazo){
+ const p=prazo.split("/"); if(p.length!==3) return false;
+ const d=new Date(+p[2],+p[1]-1,+p[0]);
+ return d>=new Date();
+}
 function findMatches(){
- const p={org:v("org"),area:v("area"),aud:v("audience"),amount:Number(v("amount")||0)};
- if(!p.area||!p.amount){alert("Informe a área e o valor pretendido.");return}
- const list=editais.map(e=>{
-  let s=0; if(e.area===p.area)s+=25; if(e.instituicoes.includes(p.org))s+=20; s+=10; if(p.amount<=e.max)s+=10; if(e.audiencias.includes(p.aud))s+=10; s+=e.vedacao?5:15;
-  const deadline=e.prazo.split("/"), d=new Date(deadline[2],deadline[1]-1,deadline[0]); if(d>=new Date())s+=10;
-  return {...e,score:s,priority:e.vedacao?"Prioridade secundária":"Prioridade alta",cls:e.vedacao?"medium":"high"}
+ const f={
+  institution:val("institution"), state:val("state"), area:val("area"), nature:val("nature"),
+  audience:val("audience"), resourceType:val("resourceType"), fundingSource:val("fundingSource"),
+  instrument:val("instrument"), minValue:num("minValue"), maxValue:num("maxValue")
+ };
+ const list=editais.filter(e=>{
+  if(f.institution && !e.instituicoes.includes(f.institution)) return false;
+  if(f.state && !matchState(e,f.state)) return false;
+  if(f.area && e.area!==f.area) return false;
+  if(f.nature && !e.naturezas.includes(f.nature)) return false;
+  if(f.audience && !e.publicos.includes(f.audience)) return false;
+  if(f.resourceType && e.tipoRecurso!==f.resourceType) return false;
+  if(f.fundingSource && e.fonte!==f.fundingSource) return false;
+  if(f.instrument && e.instrumento!==f.instrument) return false;
+  if(!matchRange(e,f.minValue,f.maxValue)) return false;
+  return true;
+ }).map(e=>{
+   let score=0;
+   if(!f.institution || e.instituicoes.includes(f.institution)) score+=20;
+   if(!f.state || matchState(e,f.state)) score+=10;
+   if(!f.area || e.area===f.area) score+=20;
+   if(!f.nature || e.naturezas.includes(f.nature)) score+=10;
+   if(!f.audience || e.publicos.includes(f.audience)) score+=10;
+   if(!f.resourceType || e.tipoRecurso===f.resourceType) score+=10;
+   if(!f.fundingSource || e.fonte===f.fundingSource) score+=5;
+   if(!f.instrument || e.instrumento===f.instrument) score+=5;
+   if(!f.minValue && !f.maxValue || matchRange(e,f.minValue,f.maxValue)) score+=5;
+   if(deadlineViable(e.prazo)) score+=5;
+   const priority=e.taxaVedada?"Prioridade secundária":"Prioridade alta";
+   return {...e,score,priority,priorityClass:e.taxaVedada?"medium":"high"};
  }).sort((a,b)=>b.score-a.score);
- document.getElementById("resultsList").innerHTML=list.map(e=>`<article class="result"><span class="badge ${e.score>=70?'high':e.score>=45?'medium':'low'}">${e.score}% compatibilidade</span><span class="badge ${e.cls}">${e.priority}</span><h3>${e.nome}</h3><div class="meta">${e.orgao} · Limite R$ ${e.max.toLocaleString("pt-BR")} · Prazo ${e.prazo}</div><div class="box ${e.cls}"><strong>${e.priority}</strong><br>${e.vedacao?"Atenção: há restrição institucional relacionada a taxas administrativas ou de gerenciamento. Recomenda-se análise administrativa antes da submissão.":"Sem restrição institucional relevante identificada neste critério."}${e.vedacao?`<br><br><strong>Vedação:</strong> ${e.texto}<br><strong>Fonte:</strong> ${e.fonte}`:""}</div><ul><li>Conferir elegibilidade</li><li>Revisar itens financiáveis e vedações</li><li>Confirmar prazo</li><li>Validar regras administrativas e financeiras</li></ul><a href="${e.url}" target="_blank"><button class="primary">Ver fonte oficial</button></a></article>`).join("");
- showE("results")
+
+ document.getElementById("resultsSummary").textContent = `${list.length} oportunidade(s) encontrada(s). Campos sem seleção foram tratados como “todas as opções”.`;
+ document.getElementById("resultsList").innerHTML = list.length ? list.map(e=>`
+  <article class="result">
+    <span class="badge ${e.score>=80?'high':e.score>=60?'medium':'low'}">${e.score}% compatibilidade</span>
+    <span class="badge ${e.priorityClass}">${e.priority}</span>
+    <h3>${e.nome}</h3>
+    <div class="meta">${e.orgao} · ${e.area} · ${e.abrangencia} · ${money(e.valorMin)} a ${money(e.valorMax)} · Prazo ${e.prazo}</div>
+    <div style="margin-top:8px">
+      ${e.naturezas.map(x=>`<span class="pill">${x}</span>`).join("")}
+      <span class="pill">${e.tipoRecurso}</span><span class="pill">${e.instrumento}</span>
+    </div>
+    <div class="box ${e.priorityClass}">
+      <strong>${e.priority}</strong><br>
+      ${e.taxaVedada
+        ? `Há vedação institucional relevante relacionada a taxas administrativas/gerenciais.<br><br><strong>Vedação:</strong> ${e.vedacao}<br><strong>Fonte:</strong> ${e.fonteVedacao}`
+        : `Sem vedação de taxa administrativa/gerencial cadastrada neste exemplo.`}
+    </div>
+    <ul>
+      <li>Conferir elegibilidade específica da UFLA</li>
+      <li>Revisar itens financiáveis e vedações</li>
+      <li>Confirmar possibilidade/necessidade de fundação de apoio</li>
+      <li>Validar regras administrativas, financeiras e jurídicas</li>
+    </ul>
+    <a href="${e.url}" target="_blank" rel="noopener"><button class="primary">Ver fonte oficial</button></a>
+  </article>`).join("") : `<p>Nenhuma oportunidade da base atual corresponde aos filtros.</p>`;
+ document.getElementById("resultsCard").classList.remove("hidden");
+}
+
+function clearTedFilters(){
+ ["tedOrg","tedStatus","tedYear","tedMinValue","tedMaxValue","tedKeyword"].forEach(id=>document.getElementById(id).value="");
+ document.getElementById("tedInstitution").value="UFLA";
+ document.getElementById("tedStatusMessage").textContent="Filtros limpos. Campos vazios significam todas as opções.";
+ document.getElementById("tedResults").innerHTML="";
+ document.getElementById("tedKpis").innerHTML='<div class="kpi"><span>TEDs encontrados</span><strong>0</strong></div><div class="kpi"><span>Valor total</span><strong>R$ 0</strong></div><div class="kpi"><span>Órgãos distintos</span><strong>0</strong></div>';
+}
+
+function searchTeds(){
+ const filters={
+  institution:val("tedInstitution"), org:val("tedOrg"), status:val("tedStatus"),
+  year:val("tedYear"), min:num("tedMinValue"), max:num("tedMaxValue"), keyword:val("tedKeyword")
+ };
+ document.getElementById("tedStatusMessage").innerHTML =
+  'Estrutura pronta para consulta. Para ativar dados reais, conecte este módulo ao endpoint oficial da API TED do Transferegov conforme a documentação. <strong>Filtros vazios serão enviados sem restrição, equivalendo a “todos”.</strong>';
+ document.getElementById("tedResults").innerHTML = `
+ <div class="notice" style="margin-top:14px">
+   A integração ao vivo não foi ativada nesta versão porque o endpoint e os nomes exatos dos parâmetros precisam ser validados na documentação oficial antes de serem hardcoded. Isso evita consulta quebrada ou campos incorretos.
+ </div>`;
 }
 </script>
 </body>
