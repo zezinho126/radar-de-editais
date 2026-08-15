@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-08-14T09:41:08.169712+00:00",
-  "totalEditais": 20,
+  "geradoEm": "2026-08-15T07:19:30.476336+00:00",
+  "totalEditais": 19,
   "erros": [],
   "editais": [
     {
@@ -223,43 +223,6 @@
       "_inscricaoInicio": "03/08/2026",
       "_documentos": [
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/ChamadaPblicaERC_21_2026_2717210.pdf"
-      ]
-    },
-    {
-      "nome": "Chamada Pública CNPq/CAPES/MRE N° 16/2026 - Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG)",
-      "orgao": "CNPq",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "IFES",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Nacional",
-      "estados": [],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Chamada pública / seleção de projetos",
-      "fonte": "Governo Federal",
-      "instrumento": "Termo de Outorga",
-      "prazo": "13/08/2026",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/chamada-publica-cnpq-N-16-2026",
-      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
-      "_publicadoEm": "29/06/2026",
-      "_inscricaoInicio": "29/06/2026",
-      "_documentos": [
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/copy_of_ChamadaPblica_CNPq_CAPES_MRE_16_2026_2717524.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/ANEXO_I___Chamada_PEC_PG_16_2026.xls",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/ANEXO_II_Chamada_CNPq_PEC_PG_16_2026.docx"
       ]
     },
     {
