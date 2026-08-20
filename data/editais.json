@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-08-19T08:01:08.949224+00:00",
-  "totalEditais": 19,
+  "geradoEm": "2026-08-20T08:03:36.444717+00:00",
+  "totalEditais": 21,
   "erros": [],
   "editais": [
     {
@@ -36,6 +36,41 @@
       "_inscricaoInicio": "03/08/2026",
       "_documentos": [
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/Chamada_24_2026.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/CAPES Nº 30/2026 – Programa de Mestrado e Doutorado Acadêmico para Inovação – MAI/DAI",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "11/12/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamada-publica-cnpq-N-30-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "19/08/2026",
+      "_inscricaoInicio": "19/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamadapublica30_2026_MAIDAI_2766773.pdf"
       ]
     },
     {
@@ -260,6 +295,41 @@
       "_documentos": [
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada_publica_20_2026_atlanticas_2714776.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/lista_conae_2736172.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/SETEC/SETAD/MCTI/FNDCT Nº 29/2026 – RHAE IA – Recursos Humanos em Áreas Estratégicas – Pesquisador na Empresa – Inteligência Artificial",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "09/10/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamada-publica-cnpq-N-29-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "19/08/2026",
+      "_inscricaoInicio": "19/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf"
       ]
     },
     {
