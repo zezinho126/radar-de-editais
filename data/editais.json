@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-08-25T08:07:55.449314+00:00",
-  "totalEditais": 21,
+  "geradoEm": "2026-08-26T08:08:57.171780+00:00",
+  "totalEditais": 20,
   "erros": [],
   "editais": [
     {
@@ -71,45 +71,6 @@
       "_inscricaoInicio": "19/08/2026",
       "_documentos": [
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamadapublica30_2026_MAIDAI_2766773.pdf"
-      ]
-    },
-    {
-      "nome": "Chamamento Público CNPq/FNDCT/MCTI Nº 01/2026 Para Participação no Programa de Apoio à Popularização da Ciência nas Unidades da Federação",
-      "orgao": "CNPq",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "IFES",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Nacional",
-      "estados": [],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Chamada pública / seleção de projetos",
-      "fonte": "Governo Federal",
-      "instrumento": "Termo de Outorga",
-      "prazo": "17/08/2026",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/chamamento-publico-01-2026",
-      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
-      "_publicadoEm": "02/07/2026",
-      "_inscricaoInicio": "02/07/2026",
-      "_documentos": [
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_Popularizacao_UF_DF_v_2_7_26.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_01_2026_Anexo_I_PopUF.xlsx",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_01_2026_PopUF_Anexo_II.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Chamamento_01_2026_PopUF_Anexo_III.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/Retificacao_01.docx"
       ]
     },
     {
