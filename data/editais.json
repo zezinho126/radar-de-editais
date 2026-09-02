@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-09-01T06:05:34.559325+00:00",
-  "totalEditais": 20,
+  "geradoEm": "2026-09-02T06:05:09.128923+00:00",
+  "totalEditais": 18,
   "erros": [],
   "editais": [
     {
@@ -71,81 +71,6 @@
       "_inscricaoInicio": "19/08/2026",
       "_documentos": [
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamadapublica30_2026_MAIDAI_2766773.pdf"
-      ]
-    },
-    {
-      "nome": "Chamada Pública CNPq/MMULHERES Nº 19/2026 - Programa Asas para o Futuro",
-      "orgao": "CNPq",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "IFES",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Nacional",
-      "estados": [],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Chamada pública / seleção de projetos",
-      "fonte": "Governo Federal",
-      "instrumento": "Termo de Outorga",
-      "prazo": "31/08/2026",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada-publica-cnpq-N-19-2026",
-      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
-      "_publicadoEm": "30/06/2026",
-      "_inscricaoInicio": "30/06/2026",
-      "_documentos": [
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada_publica_19_2026_asas_para_futuro_2713513.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/retificaodecronograma_chamada19_2026_2760560Despacho.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/copy2_of_Formulario_de_Proposta_Institucional___Anexo_I.xls",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/Anexo_II___Lista_de_manifestacao_de_interesse_do_Publico_Alvo.xls",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/Anexo_III___Documentacao_do_representante_institucional.docx"
-      ]
-    },
-    {
-      "nome": "Chamada Pública CNPq/MCTI nº 15/2026 - Programa de Cooperação Afro-Brasileira em Ciência e Tecnologia - PROAFRICA",
-      "orgao": "CNPq",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "IFES",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Nacional",
-      "estados": [],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Chamada pública / seleção de projetos",
-      "fonte": "Governo Federal",
-      "instrumento": "Termo de Outorga",
-      "prazo": "31/08/2026",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/chamada-publica-cnpq-N-15-2026",
-      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
-      "_publicadoEm": "25/05/2026",
-      "_inscricaoInicio": "25/05/2026",
-      "_documentos": [
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/CHAMADA152026PROAFRICASEI2679821.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/FAQPROAFRICACHAMADA152026SEI_CNPq2687944Anexo.pdf"
       ]
     },
     {
