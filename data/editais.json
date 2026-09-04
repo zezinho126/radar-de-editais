@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-09-03T06:06:55.813368+00:00",
-  "totalEditais": 18,
+  "geradoEm": "2026-09-04T06:04:34.786146+00:00",
+  "totalEditais": 19,
   "erros": [],
   "editais": [
     {
@@ -110,6 +110,41 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Resultadofinal_chamada_13_2026_eventos_nacionais_2732680.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_internacionais_chamada_13_2026_2714540.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_nacionais_chamada_13_2026_2714539.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública MCTI/CNPq/ANR N° 32/2026",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "31/03/2027",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-32-2026/chamada-publica-cnpq-N-32-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "03/09/2026",
+      "_inscricaoInicio": "03/09/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-32-2026/ChamadaPblicaANR322026_2766435.pdf"
       ]
     },
     {
