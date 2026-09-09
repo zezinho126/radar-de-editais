@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-08T06:04:44.864940+00:00",
+  "geradoEm": "2026-09-09T10:22:19.345000+00:00",
   "totalEditais": 19,
   "erros": [],
   "editais": [
@@ -70,7 +70,8 @@
       "_publicadoEm": "19/08/2026",
       "_inscricaoInicio": "19/08/2026",
       "_documentos": [
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamadapublica30_2026_MAIDAI_2766773.pdf"
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamadapublica30_2026_MAIDAI_2766773.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/FAQ_MAIDAI_2783876.pdf"
       ]
     },
     {
@@ -250,7 +251,8 @@
       "_publicadoEm": "19/08/2026",
       "_inscricaoInicio": "19/08/2026",
       "_documentos": [
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf"
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/FAQ_RHAEIA_2783882.pdf"
       ]
     },
     {
