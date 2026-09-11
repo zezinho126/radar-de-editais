@@ -1,10 +1,260 @@
 {
-  "geradoEm": "2026-09-10T10:15:05.755534+00:00",
-  "totalEditais": 12,
-  "erros": [
-    "Falha ao raspar CNPq: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /cnpq/pt-br/chamadas/abertas-para-submissao (Caused by NewConnectionError(\"HTTPSConnection(host='www.gov.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-  ],
+  "geradoEm": "2026-09-11T10:12:15.356559+00:00",
+  "totalEditais": 19,
+  "erros": [],
   "editais": [
+    {
+      "nome": "Chamada CNPq/CT-Biotec/FNDCT/MCTI Nº 24/2026 - Apoio à Pesquisa, Desenvolvimento e Inovação em Biotecnologia",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "18/09/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/chamada-publica-cnpq-N-24-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "03/08/2026",
+      "_inscricaoInicio": "03/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/Chamada_24_2026.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/CAPES Nº 30/2026 – Programa de Mestrado e Doutorado Acadêmico para Inovação – MAI/DAI",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "11/12/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamada-publica-cnpq-N-30-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "19/08/2026",
+      "_inscricaoInicio": "19/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamadapublica30_2026_MAIDAI_2766773.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/FAQ_MAIDAI_2783876.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada CNPq/SETEC/MCTI N° 13/2026 - Apoio a Eventos de Promoção do Empreendedorismo e da Inovação no Brasil",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/chamada-publica-cnpq-N-13-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "28/04/2026",
+      "_inscricaoInicio": "",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Chamada_CNPq_SETEC_MCTI_13_2026_atualizao_2.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Resultadofinal_chamada_13_2026_eventos_internacionais_2732685.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Resultadofinal_chamada_13_2026_eventos_nacionais_2732680.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_internacionais_chamada_13_2026_2714540.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_nacionais_chamada_13_2026_2714539.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública MCTI/CNPq/ANR N° 32/2026",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "31/03/2027",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-32-2026/chamada-publica-cnpq-N-32-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "03/09/2026",
+      "_inscricaoInicio": "03/09/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-32-2026/ChamadaPblicaANR322026_2766435.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/ERC (Conselho Europeu de Pesquisa) Nº 21/2026",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "30/09/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/chamada-publica-cnpq-N-21-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "04/08/2026",
+      "_inscricaoInicio": "03/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/ChamadaPblicaERC_21_2026_2717210.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública MCTI/CNPq/MIR/MMulheres/MPI Nº 20/2026 Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "30/09/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada-publica-cnpq-N-20-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "30/06/2026",
+      "_inscricaoInicio": "30/06/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada_publica_20_2026_atlanticas_2714776.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/lista_conae_2736172.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada Pública CNPq/SETEC/SETAD/MCTI/FNDCT Nº 29/2026 – RHAE IA – Recursos Humanos em Áreas Estratégicas – Pesquisador na Empresa – Inteligência Artificial",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "09/10/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamada-publica-cnpq-N-29-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "19/08/2026",
+      "_inscricaoInicio": "19/08/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/FAQ_RHAEIA_2783882.pdf"
+      ]
+    },
     {
       "nome": "Saiba Mais",
       "orgao": "FAPEMIG",
