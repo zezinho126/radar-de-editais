@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-14T11:13:35.900789+00:00",
+  "geradoEm": "2026-09-15T10:40:41.825193+00:00",
   "totalEditais": 19,
   "erros": [],
   "editais": [
@@ -254,6 +254,39 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/FAQ_RHAEIA_2783882.pdf"
       ]
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-publica-fapemig-cnpq-capes-n-17-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-profix-cb",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
     },
     {
       "nome": "Saiba Mais",
@@ -614,39 +647,6 @@
       "vedacao": "",
       "fonteVedacao": "",
       "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-009-2026-eventech-organizacao-de-eventos-de-inovacao-e-empreendedorismo-tecnologico",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-08-2026-bolsas-de-pos-graduacao-doutorado-sanduiche-e-estagio-pos-doutoral-no-exterior-pelo-programa-de-capacitacao-de-recursos-humanos-pcrh",
       "_descricao": "Saiba Mais",
       "_inscricaoInicio": null,
       "_resultadoPrevisto": null
