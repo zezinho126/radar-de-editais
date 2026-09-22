@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-09-21T11:24:57.456403+00:00",
-  "totalEditais": 18,
+  "geradoEm": "2026-09-22T10:33:56.125702+00:00",
+  "totalEditais": 17,
   "erros": [],
   "editais": [
     {
@@ -37,45 +37,6 @@
       "_documentos": [
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamadapublica30_2026_MAIDAI_2766773.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/FAQ_MAIDAI_2783876.pdf"
-      ]
-    },
-    {
-      "nome": "Chamada CNPq/SETEC/MCTI N° 13/2026 - Apoio a Eventos de Promoção do Empreendedorismo e da Inovação no Brasil",
-      "orgao": "CNPq",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "IFES",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Nacional",
-      "estados": [],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Chamada pública / seleção de projetos",
-      "fonte": "Governo Federal",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/chamada-publica-cnpq-N-13-2026",
-      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
-      "_publicadoEm": "28/04/2026",
-      "_inscricaoInicio": "",
-      "_documentos": [
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Chamada_CNPq_SETEC_MCTI_13_2026_atualizao_2.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Resultadofinal_chamada_13_2026_eventos_internacionais_2732685.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/Resultadofinal_chamada_13_2026_eventos_nacionais_2732680.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_internacionais_chamada_13_2026_2714540.pdf",
-        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/resultado_preliminar_eventos_nacionais_chamada_13_2026_2714539.pdf"
       ]
     },
     {
