@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-10-07T12:17:26.010926+00:00",
-  "totalEditais": 15,
+  "geradoEm": "2026-10-08T12:28:36.121269+00:00",
+  "totalEditais": 16,
   "erros": [],
   "editais": [
     {
@@ -75,6 +75,43 @@
       ]
     },
     {
+      "nome": "Chamada CNPq nº 33/2026 - Bolsas de Produtividade do CNPq",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "07/01/2027",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/chamada-publica-cnpq-N-33-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "07/10/2026",
+      "_inscricaoInicio": "07/10/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/Chamada_Produtividade_33_2026.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/Anexo_I_Criterios_dos_CAs.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/FAQ_Chamada_33_2026_Bolsas_de_Produtividade_do_CNPq.pdf"
+      ]
+    },
+    {
       "nome": "Chamada Pública CNPq/SETEC/SETAD/MCTI/FNDCT Nº 29/2026 – RHAE IA – Recursos Humanos em Áreas Estratégicas – Pesquisador na Empresa – Inteligência Artificial",
       "orgao": "CNPq",
       "area": "Multidisciplinar / Outros",
@@ -109,6 +146,39 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/FAQ_RHAEIA_2783882.pdf"
       ]
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/diretriz-fapemig-503-2026-chamada-publica-de-cooperacao-internacional-confap-ramp-2026-1-a-edicao",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
     },
     {
       "nome": "Saiba Mais",
@@ -469,39 +539,6 @@
       "vedacao": "",
       "fonteVedacao": "",
       "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-12-2026-treinamentos-individuais-e-coletivos-pelo-programa-de-capacitacao-de-recursos-humanos-pcrh",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-009-2026-eventech-organizacao-de-eventos-de-inovacao-e-empreendedorismo-tecnologico",
       "_descricao": "Saiba Mais",
       "_inscricaoInicio": null,
       "_resultadoPrevisto": null
