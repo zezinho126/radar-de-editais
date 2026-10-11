@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-10T11:34:07.092649+00:00",
+  "geradoEm": "2026-10-11T11:47:47.284396+00:00",
   "totalEditais": 16,
   "erros": [],
   "editais": [
@@ -146,6 +146,39 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/FAQ_RHAEIA_2783882.pdf"
       ]
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-018-2026-hubmg-gov-resolucao-de-desafios-publicos-por-meio-de-inovacao-aberta",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
     },
     {
       "nome": "Saiba Mais",
@@ -506,39 +539,6 @@
       "vedacao": "",
       "fonteVedacao": "",
       "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-15-2026-laboratorios-certificadores",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-12-2026-treinamentos-individuais-e-coletivos-pelo-programa-de-capacitacao-de-recursos-humanos-pcrh",
       "_descricao": "Saiba Mais",
       "_inscricaoInicio": null,
       "_resultadoPrevisto": null
