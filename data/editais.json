@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-10-14T10:51:21.960076+00:00",
-  "totalEditais": 15,
+  "geradoEm": "2026-10-15T10:33:02.166379+00:00",
+  "totalEditais": 4,
   "erros": [],
   "editais": [
     {
@@ -40,6 +40,42 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/Anexo_IIIChamada30_2026MAIDAI.docx",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/Anexo_IVChamada30_2026MAIDAI.docx",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/FAQ_MAIDAI_2783876.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada CNPq Nº 34/2026 - Auxílio à Promoção de Eventos Científicos, Tecnológicos e/ou de Inovação - ARC",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "04/12/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-34-2026/chamada-publica-cnpq-N-34-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "14/10/2026",
+      "_inscricaoInicio": "14/10/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-34-2026/Chamada_ARC_34_2026.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-34-2026/FAQ_Chamada_ARC_34_2026.pdf"
       ]
     },
     {
@@ -114,402 +150,6 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/Anexo_I_versao_13_10_20_26_alterado_o_criterio_do_CA-DT.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/FAQ_Chamada_33_2026_Bolsas_de_Produtividade_do_CNPq.pdf"
       ]
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-018-2026-hubmg-gov-resolucao-de-desafios-publicos-por-meio-de-inovacao-aberta",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/diretriz-fapemig-503-2026-chamada-publica-de-cooperacao-internacional-confap-ramp-2026-1-a-edicao",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-publica-fapemig-cnpq-capes-n-17-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-profix-cb",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-004-2026-participacao-coletiva-em-eventos-tecnicos-no-pais-3a-entrada",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-013-2026-pesquisador-na-empresa",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-007-2026-organizacao-de-eventos-de-carater-tecnico-cientifico-oet-2a-entrada",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/diretriz-502-2026-chamada-publica-de-cooperacao-internacional-water4all-2025-2026-water-and-health",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-16-2026-epamig-5-0-desenvolvimento-de-solucoes-cientificas-tecnologicas-e-de-inovacao-para-a-agricultura-do-futuro",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/fapemig-sede-compete-minas",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-0xx-202x-cientista-empreendedor",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/diretriz-501-2026-chamada-publica-de-cooperacao-internacional-biodiversa-biodivconnect-2025-2026-restauracao-do-funcionamento-integridade-e-conectividade-do-ecossistema",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-15-2026-laboratorios-certificadores",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
     }
   ]
 }
