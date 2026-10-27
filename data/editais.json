@@ -1,8 +1,45 @@
 {
-  "geradoEm": "2026-10-26T11:51:07.813409+00:00",
-  "totalEditais": 16,
+  "geradoEm": "2026-10-27T11:15:47.461646+00:00",
+  "totalEditais": 17,
   "erros": [],
   "editais": [
+    {
+      "nome": "Chamada Pública CNPq/Petrobras N° 31/2026 - Projeto InspirAÇÃO",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "08/12/2026",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-31-2026/chamada-publica-cnpq-N-31-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "26/10/2026",
+      "_inscricaoInicio": "26/10/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-31-2026/chamadapublica31_2026_CNPq_Petrobras_projetoinspirAO_2825317.pdf",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-31-2026/Anexo_II_Chamada31_2026_2828156.docx",
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-31-2026/Anexo_III_chamada_312026_2742151.xls"
+      ]
+    },
     {
       "nome": "Chamada Pública CNPq/CAPES Nº 30/2026 – Programa de Mestrado e Doutorado Acadêmico para Inovação – MAI/DAI",
       "orgao": "CNPq",
