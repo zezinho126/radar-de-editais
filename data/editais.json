@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-12T14:14:25.045940+00:00",
+  "geradoEm": "2026-11-13T13:37:31.694381+00:00",
   "totalEditais": 19,
   "erros": [],
   "editais": [
@@ -260,6 +260,39 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/Criterios_versao_09112026.pdf",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/FAQ_Chamada_33_2026_Bolsas_de_Produtividade_do_CNPq.pdf"
       ]
+    },
+    {
+      "nome": "Saiba Mais",
+      "orgao": "FAPEMIG",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Estadual",
+      "estados": [
+        "MG"
+      ],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Auxílio à pesquisa",
+      "fonte": "Governo Estadual",
+      "instrumento": "Termo de Outorga",
+      "prazo": "",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-19-2026-minas-para-o-mundo-chamada-institucional-de-fomento-a-internacionalizacao-da-cti-mineira-2027-2031",
+      "_descricao": "Saiba Mais",
+      "_inscricaoInicio": null,
+      "_resultadoPrevisto": null
     },
     {
       "nome": "Saiba Mais",
@@ -620,39 +653,6 @@
       "vedacao": "",
       "fonteVedacao": "",
       "url": "https://fapemig.br/oportunidades/chamadas-e-editais/fapemig-sede-compete-minas",
-      "_descricao": "Saiba Mais",
-      "_inscricaoInicio": null,
-      "_resultadoPrevisto": null
-    },
-    {
-      "nome": "Saiba Mais",
-      "orgao": "FAPEMIG",
-      "area": "Multidisciplinar / Outros",
-      "naturezas": [
-        "Pesquisa"
-      ],
-      "publicos": [
-        "Pesquisadores"
-      ],
-      "instituicoes": [
-        "UFLA",
-        "ICT",
-        "Universidade Pública"
-      ],
-      "abrangencia": "Estadual",
-      "estados": [
-        "MG"
-      ],
-      "valorMin": 0,
-      "valorMax": 0,
-      "tipoRecurso": "Auxílio à pesquisa",
-      "fonte": "Governo Estadual",
-      "instrumento": "Termo de Outorga",
-      "prazo": "",
-      "taxaVedada": false,
-      "vedacao": "",
-      "fonteVedacao": "",
-      "url": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-0xx-202x-cientista-empreendedor",
       "_descricao": "Saiba Mais",
       "_inscricaoInicio": null,
       "_resultadoPrevisto": null
