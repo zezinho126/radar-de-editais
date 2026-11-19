@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-11-18T14:49:19.851316+00:00",
-  "totalEditais": 19,
+  "geradoEm": "2026-11-19T14:57:46.011978+00:00",
+  "totalEditais": 20,
   "erros": [],
   "editais": [
     {
@@ -114,6 +114,41 @@
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/Anexo_IIIChamada30_2026MAIDAI.docx",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/Anexo_IVChamada30_2026MAIDAI.docx",
         "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/FAQ30_2026MAIDAI_2822516ATUALIZADO.pdf"
+      ]
+    },
+    {
+      "nome": "Chamada CNPq/MIR Nº 23/2026  - Programa Lélia Gonzalez de fomento a pesquisas sobre desigualdades étnico-raciais na ciência, na educação e na sociedade brasileiras",
+      "orgao": "CNPq",
+      "area": "Multidisciplinar / Outros",
+      "naturezas": [
+        "Pesquisa"
+      ],
+      "publicos": [
+        "Pesquisadores"
+      ],
+      "instituicoes": [
+        "UFLA",
+        "IFES",
+        "ICT",
+        "Universidade Pública"
+      ],
+      "abrangencia": "Nacional",
+      "estados": [],
+      "valorMin": 0,
+      "valorMax": 0,
+      "tipoRecurso": "Chamada pública / seleção de projetos",
+      "fonte": "Governo Federal",
+      "instrumento": "Termo de Outorga",
+      "prazo": "01/03/2027",
+      "taxaVedada": false,
+      "vedacao": "",
+      "fonteVedacao": "",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-23-2026/chamada-publica-cnpq-N-23-2026",
+      "_descricao": "Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência",
+      "_publicadoEm": "19/11/2026",
+      "_inscricaoInicio": "19/11/2026",
+      "_documentos": [
+        "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-23-2026/Chamada_Lelia_Gonzalez_23_2026.pdf"
       ]
     },
     {
