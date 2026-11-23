@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-22T13:46:28.000509+00:00",
+  "geradoEm": "2026-11-23T16:49:08.298055+00:00",
   "totalEditais": 12,
   "erros": [
     "Falha ao raspar CNPq: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
